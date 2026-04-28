@@ -13,7 +13,7 @@ from shared.personas.registry import (
 )
 from shared.personas.schema import PersonaSpec
 
-EXPECTED_PERSONAS: frozenset[str] = frozenset()
+EXPECTED_PERSONAS: frozenset[str] = frozenset({"supply_chain_analyst_v1"})
 
 
 def test_definitions_directory_exists() -> None:

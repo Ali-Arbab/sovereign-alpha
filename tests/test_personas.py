@@ -18,6 +18,7 @@ EXPECTED_PERSONAS: frozenset[str] = frozenset(
         "supply_chain_analyst_v1",
         "hawkish_fed_strategist_v1",
         "aggressive_momentum_trader_v1",
+        "conservative_allocator_v1",
     }
 )
 

@@ -13,6 +13,8 @@ dependencies = [
     "pyzmq>=26",
     "msgpack>=1.1",
     "numpy>=1.26",
+    "scipy>=1.13",
+    "pandera>=0.21",
 ]
 
 [project.optional-dependencies]

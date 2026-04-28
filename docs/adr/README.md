@@ -11,6 +11,8 @@ Per master directive §0.5.1.H. Each ADR captures a single significant decision:
 | [0003](0003-zmq-messagepack-bridge.md) | ZeroMQ + MessagePack for the simulator → UE5 bridge | Accepted |
 | [0004](0004-pydantic-pandera-split.md) | Pydantic at boundaries, Pandera in-flight | Accepted |
 | [0005](0005-content-addressed-caching.md) | Content-addressed caching at every pipeline stage | Accepted |
+| [0006](0006-single-node-no-cloud.md) | Single-node closed-loop, zero cloud dependency | Accepted |
+| [0007](0007-synthetic-ledger-first-class.md) | Synthetic Alpha Ledger is a first-class artifact, not a placeholder | Accepted |
 | [0008](0008-toml-personas.md) | Persona definitions in TOML, parsed via stdlib `tomllib` | Accepted |
 
 ## Template

@@ -7,6 +7,8 @@ Per master directive §0.5.1.H. Each ADR captures a single significant decision:
 | # | Title | Status |
 |---|---|---|
 | [0001](0001-polars-over-pandas.md) | Polars over Pandas for Module II | Accepted |
+| [0002](0002-as-of-join-only.md) | `as_of_join` is the only sanctioned temporal merge | Accepted |
+| [0005](0005-content-addressed-caching.md) | Content-addressed caching at every pipeline stage | Accepted |
 | [0008](0008-toml-personas.md) | Persona definitions in TOML, parsed via stdlib `tomllib` | Accepted |
 
 ## Template

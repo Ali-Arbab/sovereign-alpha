@@ -31,6 +31,16 @@ tests/                   Unit + property-based + temporal-firewall leak tests
 
 ```bash
 uv sync --all-extras
-uv run pytest
-uv run ruff check .
+make bootstrap-test    # end-to-end §0.5.3 smoke (synthetic ledger -> backtest -> bus)
+make ci                # lint + tests + bootstrap-test
+make test              # tests only
+make lint              # ruff
 ```
+
+`bootstrap-test` exercises the full pipeline against synthetic data and finishes in seconds. It is the canonical proof that the harness is wired correctly before any real-data run.
+
+## Operations
+
+- [`docs/architecture.md`](docs/architecture.md) — C4 diagrams (Context / Containers / Components) of the system.
+- [`docs/adr/`](docs/adr/) — Architecture Decision Records.
+- [`docs/HARDWARE_ARRIVAL_DAY.md`](docs/HARDWARE_ARRIVAL_DAY.md) — point-and-shoot procedure for transitioning from bootstrap state (synthetic everything) to Sovereign state (DeepSeek-R1 32B over the real 1.8M-doc corpus) when the 5090 / 9950X3D / 128GB / Gen5 stack lands.

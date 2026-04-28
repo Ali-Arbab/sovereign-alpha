@@ -28,3 +28,6 @@ jobs:
 
       - name: Pytest
         run: uv run pytest
+
+      - name: Bootstrap end-to-end test
+        run: uv run python scripts/bootstrap_test.py
